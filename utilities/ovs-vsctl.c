@@ -2136,7 +2136,7 @@ add_port(struct vsctl_context *ctx,
         }
     }
     check_conflicts(ctx, port_name,
-                    xasprintf("cannot create a port named %s", port_name));
+                    xasprintf("cannot create a port named %s!!!!", port_name));
     for (i = 0; i < n_ifaces; i++) {
         check_conflicts(ctx, iface_names[i],
                         xasprintf("cannot create an interface named %s",
