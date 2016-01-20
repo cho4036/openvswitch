@@ -26,7 +26,7 @@
 #include <linux/skbuff.h>
 #include <linux/tcp.h>
 #include <linux/workqueue.h>
-
+#include <net/ip6_checksum.h>
 #include <net/icmp.h>
 #include <net/inet_ecn.h>
 #include <net/ip.h>
