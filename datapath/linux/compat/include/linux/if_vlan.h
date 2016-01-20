@@ -53,7 +53,6 @@ static inline struct sk_buff *rpl_vlan_insert_tag_set_proto(struct sk_buff *skb,
 #endif
 
 #ifndef HAVE_VLAN_HWACCEL_PUSH_INSIDE
-
 /*
  * __vlan_hwaccel_push_inside - pushes vlan tag to the payload
  * @skb: skbuff to tag
