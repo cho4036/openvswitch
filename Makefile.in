@@ -114,6 +114,7 @@ bin_PROGRAMS = utilities/ovs-appctl$(EXEEXT) \
 	utilities/ovs-testcontroller$(EXEEXT) \
 	utilities/ovs-dpctl$(EXEEXT) utilities/ovs-ofctl$(EXEEXT) \
 	utilities/ovs-vsctl$(EXEEXT) utilities/ovs-benchmark$(EXEEXT) \
+	utilities/ovs-ofctl$(EXEEXT) \
 	ovsdb/ovsdb-tool$(EXEEXT) ovsdb/ovsdb-client$(EXEEXT) \
 	vtep/vtep-ctl$(EXEEXT)
 sbin_PROGRAMS = $(am__EXEEXT_3) vswitchd/ovs-vswitchd$(EXEEXT) \
