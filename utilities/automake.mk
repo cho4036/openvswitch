@@ -3,6 +3,7 @@ bin_PROGRAMS += \
 	utilities/ovs-testcontroller \
 	utilities/ovs-dpctl \
 	utilities/ovs-ofctl \
+	utilities/ovs-script \
 	utilities/ovs-vsctl
 bin_SCRIPTS += utilities/ovs-docker \
 	utilities/ovs-pki
