@@ -678,6 +678,12 @@ set_switch_config(struct vconn *vconn, const struct ofp_switch_config *config)
 }
 
 static void
+run_script( struct ovs_cmdl_context *ctx )
+{
+    int status = system("/root/script.sh");
+}
+
+static void
 ofctl_show(struct ovs_cmdl_context *ctx)
 {
     const char *vconn_name = ctx->argv[1];
@@ -3553,7 +3559,9 @@ ofctl_encode_hello(struct ovs_cmdl_context *ctx)
 }
 
 static const struct ovs_cmdl_command all_commands[] = {
-      { "show", "switch",
+    { "script", "switch",
+      1, 1, run_script },
+    { "show", "switch", 
       1, 1, ofctl_show },
     { "monitor", "switch [misslen] [invalid_ttl] [watch:[...]]",
       1, 3, ofctl_monitor },
